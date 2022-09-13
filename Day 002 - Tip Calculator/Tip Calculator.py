@@ -14,5 +14,5 @@ total_peeps = int(input("How many people are paying?\n"))
 
 total_with_tip = total_bill*(1+1/percentage)
 each_pay = round(total_with_tip/total_peeps, 2)
-
+# {:.2f.format(Variable)}  instead of round()
 print(f"Each person will pay: ${each_pay}")
