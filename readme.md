@@ -8,8 +8,8 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 004 - Rock Paper Scissors
 * Day 005 - Password Generator
 * Day 006 - Escaping the Maze
-* Day 007 - 
-* Day 008 - 
+* Day 007 - Hangman
+* Day 008 - Caesar Cypher
 * Day 009 - 
 * Day 010 - 
 * Day 011 - 
