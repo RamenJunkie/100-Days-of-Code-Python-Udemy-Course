@@ -11,7 +11,7 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 007 - Hangman
 * Day 008 - Caesar Cypher
 * Day 009 - Secret Auction
-* Day 010 - 
+* Day 010 - Calculator
 * Day 011 - 
 * Day 012 - 
 * Day 013 - 
