@@ -1,3 +1,5 @@
+## 100 Days of Code Python Course by App Brewery
+
 Code from the Udemy course "[100 Days of Code: the Complete Python Bootcamp](https://www.udemy.com/course/100-days-of-code/)"
 
 Not necesarrily completed in 100 days or actually done daily.
@@ -12,13 +14,23 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 008 - Caesar Cypher
 * Day 009 - Secret Auction
 * Day 010 - Calculator
-* Day 011 - 
-* Day 012 - 
-* Day 013 - 
-* Day 014 - 
-* Day 015 - 
-* Day 016 - 
-* Day 017 - 
-* Day 018 - 
-* Day 019 - 
-* Day 020 - 
+* Day 011 -
+* Day 012 -
+* Day 013 -
+* Day 014 -
+* Day 015 -
+* Day 016 -
+* Day 017 -
+* Day 018 -
+* Day 019 -
+* Day 020 -
+* Day 021 -
+* Day 022 -
+* Day 023 -
+* Day 024 -
+* Day 025 -
+* Day 026 -
+* Day 027 -
+* Day 028 -
+* Day 029 -
+* Day 030 -
