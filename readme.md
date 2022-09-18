@@ -10,7 +10,7 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 006 - Escaping the Maze
 * Day 007 - Hangman
 * Day 008 - Caesar Cypher
-* Day 009 - 
+* Day 009 - Secret Auction
 * Day 010 - 
 * Day 011 - 
 * Day 012 - 
