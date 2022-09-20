@@ -14,11 +14,12 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 008 - Caesar Cypher
 * Day 009 - Secret Auction
 * Day 010 - Calculator
-* Day 011 -
-* Day 012 -
-* Day 013 -
-* Day 014 -
-* Day 015 -
+* Day 011 - Blackjack
+* Day 012 - Number Guesser
+* Day 013 - Debugging
+* Day 014 - Higher Lower Game
+--- End of Beginner Section ---
+* Day 015 - Coffee Machine Project
 * Day 016 -
 * Day 017 -
 * Day 018 -
