@@ -20,7 +20,7 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 014 - Higher Lower Game
 --- End of Beginner Section ---
 * Day 015 - Coffee Machine Project
-* Day 016 -
+* Day 016 - OOP Coffee Machine
 * Day 017 -
 * Day 018 -
 * Day 019 -
