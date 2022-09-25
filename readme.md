@@ -21,7 +21,7 @@ Not necesarrily completed in 100 days or actually done daily.
 --- End of Beginner Section ---
 * Day 015 - Coffee Machine Project
 * Day 016 - OOP Coffee Machine
-* Day 017 -
+* Day 017 - Quiz Game Project
 * Day 018 -
 * Day 019 -
 * Day 020 -
