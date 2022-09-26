@@ -17,13 +17,13 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 011 - Blackjack
 * Day 012 - Number Guesser
 * Day 013 - Debugging
-* Day 014 - Higher Lower Game
---- End of Beginner Section ---
+* Day 014 - Higher Lower Game  
+--- End of Beginner Section ---  
 * Day 015 - Coffee Machine Project
 * Day 016 - OOP Coffee Machine
 * Day 017 - Quiz Game Project
-* Day 018 -
-* Day 019 -
+* Day 018 - Hirst Painting Project (Turtle Graphics Practice)
+* Day 019 - Turtle Racing
 * Day 020 -
 * Day 021 -
 * Day 022 -
