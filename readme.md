@@ -14,23 +14,23 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 008 - Caesar Cypher
 * Day 009 - Secret Auction
 * Day 010 - Calculator
-* Day 011 - Blackjack
-* Day 012 - Number Guesser
-* Day 013 - Debugging
+* Day 011 - Blackjack Game Capstone Project
+* Day 012 - Number Guesser Game
+* Day 013 - Debugging Practice
 * Day 014 - Higher Lower Game  
 --- End of Beginner Section ---  
 * Day 015 - Coffee Machine Project
-* Day 016 - OOP Coffee Machine
+* Day 016 - Object Oriented Programming Coffee Machine
 * Day 017 - Quiz Game Project
 * Day 018 - Hirst Painting Project (Turtle Graphics Practice)
 * Day 019 - Turtle Racing Game & Etch A Sketch
 * Day 020 - Snake Game Part 1
-* Day 021 - Snake Game Part 2
-* Day 022 -
-* Day 023 -
-* Day 024 -
-* Day 025 -
-* Day 026 -
+* Day 021 - Snake Game Part 2 (Nokia Snake)
+* Day 022 - Pong Game    <---------- ***** YOU ARE HERE ***** -------- >
+* Day 023 - Turtle Crossing Game Capstone Project (Frogger)
+* Day 024 - Mail Merge Challenge
+* Day 025 - United States Game
+* Day 026 - NATO Alphabet Project
 * Day 027 -
 * Day 028 -
 * Day 029 -
