@@ -26,23 +26,6 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 019 - Turtle Racing Game & Etch A Sketch
 * Day 020 - Snake Game Part 1
 * Day 021 - Snake Game Part 2 (Nokia Snake)
-* Day 022 - Pong Game    <---------- ***** YOU ARE HERE ***** -------- >
-* Day 023 - Turtle Crossing Game Capstone Project (Frogger)
-* Day 024 - Mail Merge Challenge
-* Day 025 - United States Game
-* Day 026 - NATO Alphabet Project
-* Day 027 -
-* Day 028 -
-* Day 029 -
-* Day 030 -
-* Day 031 -
---- End of Intermediate Section ---  
-* Day 032 -
-* Day 033 -
-* Day 034 -
-* Day 035 -
-* Day 036 -
-* Day 037 -
-* Day 038 -
-* Day 039 -
-* Day 040 -
+* Day 022 - Pong Game
+* Day 023 - Turtle Crossing Game Capstone Project (Crossey Road-ish)
+* Day 024 - Improved Snake Game and Mail Merge Challenge
