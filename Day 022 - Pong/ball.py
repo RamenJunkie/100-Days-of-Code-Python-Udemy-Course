@@ -29,7 +29,6 @@ class Ball(Turtle):
         #if self.xcor() <= -310:
         #    self.bounce_to_right()
 
-
     def bounce_down(self):
         self.speed_y = -self.speed_y
     def bounce_up(self):

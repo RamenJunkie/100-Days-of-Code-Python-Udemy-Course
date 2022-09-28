@@ -29,7 +29,6 @@ screen.onkey(fun=right_p.down, key="2")
 #debug screen.onkey(fun=score.add_point_p1, key="z")
 #debug screen.onkey(fun=score.add_point_p2, key="x")
 
-
 while game_on:
     bouncer.move_ball()
     # Detect Paddle Collisions
