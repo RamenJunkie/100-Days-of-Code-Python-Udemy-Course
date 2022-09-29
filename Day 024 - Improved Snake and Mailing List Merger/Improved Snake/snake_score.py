@@ -29,7 +29,7 @@ class Score(Turtle):
         sleep(3)
         if self.score > self.high_score:
             self.high_score = self.score
-        with open("snake_scores.txt", mode = "w") as file:
+        with open("snake_scores.txt", mode ="w") as file:
             file.write(str(self.high_score))
         self.score = 0
         self.update_scoreboard()
