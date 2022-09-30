@@ -36,16 +36,14 @@ while gameon:
         gameon = False
 
     if user_state == "Exit":
-        missing_states = []
-        for each in data["state"].values:
-            if each not in guessed:
-                missing_states.append(each)
+        missing_states = [each for each in data["state"].values if(each not in guessed)]
+# Original for Posterity
+#        for each in data["state"].values:
+#            if each not in guessed:
+#                missing_states.append(each)
+
         new_data = pandas.DataFrame(missing_states)
-
         new_data.to_csv("States_To_Learn.csv")
-
         gameon = False
-
-
 
 screen.exitonclick()

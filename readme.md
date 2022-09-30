@@ -29,3 +29,5 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 022 - Pong Game
 * Day 023 - Turtle Crossing Game Capstone Project (Crossey Road-ish)
 * Day 024 - Improved Snake Game and Mail Merge Challenge
+* Day 025 - United States Game
+* Day 026 - NATO Phonetic Alphabet Project
