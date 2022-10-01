@@ -19,3 +19,24 @@ Docsctrings - Give custom functions descriptions.
 Example
 
 """ Put the Info in here just below the definition """
+
+-----------------------------------------------------------------------------------
+
+Basic Turtle Screen
+
+from turtle import Turtle, Screen
+
+screen = Screen(height = 600, width = 600)
+
+
+screen.exitonclick()
+
+----------------------------------------------------------------------------------
+basic tkinter window
+
+import tkinter
+
+window = tkinter.Tk()
+
+
+window.mainloop()
