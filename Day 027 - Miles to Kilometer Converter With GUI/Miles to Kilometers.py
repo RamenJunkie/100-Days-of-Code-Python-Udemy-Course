@@ -2,10 +2,12 @@ import tkinter
 
 def conv_to_km():
     conversion = float(entry_mi.get())*1.6
+    entry_km.delete(0,tkinter.END)
     entry_km.insert(tkinter.END, string=f"{conversion}")
 
 def conv_to_miles():
     conversion = float(entry_km.get())/1.6
+    entry_mi.delete(0,tkinter.END)
     entry_mi.insert(tkinter.END, string=f"{conversion}")
 
 window = tkinter.Tk()

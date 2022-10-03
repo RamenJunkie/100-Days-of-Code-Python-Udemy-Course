@@ -31,3 +31,9 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 024 - Improved Snake Game and Mail Merge Challenge
 * Day 025 - United States Game
 * Day 026 - NATO Phonetic Alphabet Project
+* Day 027 - Mile to Kilometer Converter and Tkinter
+* Day 028 - Pomodoro Timer
+* Day 028 - Password Manager Part 1
+* Day 029 - Password Manager Part 2
+* Day 030 - Flashcard App
+* --- End of Intermediate Section --- 
