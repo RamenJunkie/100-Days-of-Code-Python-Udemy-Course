@@ -33,7 +33,7 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 026 - NATO Phonetic Alphabet Project
 * Day 027 - Mile to Kilometer Converter and Tkinter
 * Day 028 - Pomodoro Timer
-* Day 028 - Password Manager Part 1
-* Day 029 - Password Manager Part 2
-* Day 030 - Flashcard App
+* Day 029 - Password Manager Part 1
+* Day 030 - Password Manager Part 2
+* Day 031 - Flashcard App (Norwegian with French Option)
 * --- End of Intermediate Section --- 
