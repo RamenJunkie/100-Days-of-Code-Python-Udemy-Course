@@ -1,7 +1,7 @@
 #State Guessing Game - Guess the states and the show up on a map
 # 2022.09.29
 
-from turtle import Turtle, Screen
+from turtle import Screen
 import state_namer
 import pandas
 
