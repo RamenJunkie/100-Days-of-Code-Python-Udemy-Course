@@ -5,4 +5,3 @@ from auth import *
 
 connection = smtplib.SMTP(outlook.office365.com)
 
-Ok
