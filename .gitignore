@@ -141,3 +141,4 @@ cython_debug/
 /Day 032 - Automatic Birthday Emailer/Motivational Quote Sender/auth.py
 /Day 032 - Automatic Birthday Emailer/Automatic Birthday Wisher/auth.py
 /Day 033 - ISS Overhead Notifier/ISS Notifier/auth.py
+**/auth.py
