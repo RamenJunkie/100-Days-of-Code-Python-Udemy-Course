@@ -63,5 +63,5 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 055 - Higher Lower Game Returns for Revenge
 * Day 056 - Rendering Static Web Files with Templates
 * Day 057 - Templates, Jinja and Flask
-* Day 058 - Web foundation Part 5 - Bootstrap
+* Day 058 - Web foundation Part 5 - Bootstrap  
 --- End of Intermediate+ Section --- 
