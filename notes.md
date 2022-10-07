@@ -40,3 +40,9 @@ window = tkinter.Tk()
 
 
 window.mainloop()
+
+------------------------------------------------------------------------------------
+
+## Notes, Move this later
+print(iss_loc) - Status reponse
+print(iss_loc.status_code) - Just status Code

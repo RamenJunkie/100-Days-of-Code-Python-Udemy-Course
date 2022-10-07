@@ -37,3 +37,31 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 030 - Password Manager Part 2
 * Day 031 - Flashcard App (Norwegian with French Option)
 * --- End of Intermediate Section --- 
+* Day 032 - Automatic eMail Birthday Wisher Project 
+* Day 033 - Using APIs
+* Day 034 - Create GUI Quiz App (API Practice)
+* Day 035 - API Authentication
+* Day 036 - Stock Trading News Alert Project
+* Day 037 - Habit Tracking Project
+* Day 038 - Workout Tracking with Google Sheets
+* Day 039 - Flight Deal Finder Capstone Project Part 1
+* Day 040 - Flight Deal Finder Capstone Project Part 2
+* Day 041 - Web Foundation Part 1 - HTML
+* Day 042 - Web Foundation Part 2 - More HTML
+* Day 043 - Web Foundation Part 3 - CSS
+* Day 044 - Web Foundation Part 4 - More CSS
+* Day 045 - Web Scraping with Beautiful Soup
+* Day 046 - Create a Spotify Playlist
+* Day 047 - Create an Amazon Price Tracker
+* Day 048 - Selenium Web Browser Bot
+* Day 049 - Automating Job Applications on LinkedIn
+* Day 050 - Auto Tinder Swiping Bot
+* Day 051 - Internet Speed Twitter Complaint Bot
+* Day 052 - Instagram Follower Bot
+* Day 053 - Data Entry Job Automation Capstone Project
+* Day 054 - Web Development with Flask
+* Day 055 - Higher Lower Game Returns for Revenge
+* Day 056 - Rendering Static Web Files with Templates
+* Day 057 - Templates, Jinja and Flask
+* Day 058 - Web foundation Part 5 - Bootstrap
+--- End of Intermediate+ Section --- 

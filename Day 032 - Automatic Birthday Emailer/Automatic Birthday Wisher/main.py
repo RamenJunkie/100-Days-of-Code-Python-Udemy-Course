@@ -6,7 +6,7 @@ from auth import *
 import smtplib
 
 def send_email(email, letter_text):
-    with smtplib.SMTP("outlook.office365.com") as connection:
+    with smtplib.SMTP(mail_server, port=587) as connection:
         connection.starttls()
         connection.login(user=mail, password=passwd)
         connection.sendmail(
