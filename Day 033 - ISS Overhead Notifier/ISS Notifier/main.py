@@ -2,7 +2,6 @@ import requests
 import datetime as dt
 import mailer_class
 
-my_lat_lon = (39.816290, -88.911590)
 email = "josh_miller79@outlook.com"
 mailer = mailer_class.Mailer()
 
