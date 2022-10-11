@@ -44,8 +44,9 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 036 - Stock Trading News Alert Project
 * Day 037 - Habit Tracking Project
 * Day 038 - Workout Tracking with Google Sheets
-* Day 039 - Flight Deal Finder Capstone Project Part 1
-* Day 040 - Flight Deal Finder Capstone Project Part 2
+* ~~Day 039 - Flight Deal Finder Capstone Project Part 1~~
+* ~~Day 040 - Flight Deal Finder Capstone Project Part 2~~
+* I opted to skip Day 39 and Day 40. I don't fly and I'm not putting bank details into the API Website. 
 * Day 041 - Web Foundation Part 1 - HTML
 * Day 042 - Web Foundation Part 2 - More HTML
 * Day 043 - Web Foundation Part 3 - CSS
