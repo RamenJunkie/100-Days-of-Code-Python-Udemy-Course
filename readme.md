@@ -52,7 +52,7 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 043 - Web Foundation Part 3 - CSS
 * Day 044 - Web Foundation Part 4 - More CSS
 * Day 045 - Web Scraping with Beautiful Soup
-* Day 046 - Create a Spotify Playlist
+* Day 046 - Spotify Musical Time Machine Playlist Maker
 * Day 047 - Create an Amazon Price Tracker
 * Day 048 - Selenium Web Browser Bot
 * Day 049 - Automating Job Applications on LinkedIn
