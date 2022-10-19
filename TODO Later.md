@@ -6,6 +6,8 @@ Things to possibly add or enhance later.
 * Day - 18 Hirst Painting - Add input sample image, Prompt for rows/columns, maybe shape?
 * Day - 22 Pong - Improve controls maybe
 * Day - 23 Turtle Crossing - Make traffic more dynamically full
+* Day - 46 Amazon Price Tracker, set up somewhere
+* Day - 47 Scrap events and insert them into a calendar
 
 Turn into stand alone executables of some kind or embed in web.
 
