@@ -1,7 +1,7 @@
 import mailer_class
 import stock
 # Add each Stock class to the stocks to watch and create an stock class
-tesla = stock.Stock("TSLA","Tesla Inc")
+tesla = stock.Stock("TSLA", "Tesla Inc")
 microsoft = stock.Stock("MSFT", "Microsoft")
 apple = stock.Stock("APPL", "Apple Inc")
 att = stock.Stock("T", "AT&T")

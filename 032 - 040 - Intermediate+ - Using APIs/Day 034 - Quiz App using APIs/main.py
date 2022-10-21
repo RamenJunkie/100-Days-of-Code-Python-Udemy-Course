@@ -2,7 +2,6 @@ from data import *
 from question_model import Question
 from quiz_brain import QuizBrain
 import ui
-from tkinter import *
 
 ## Add a Category and Difficulty Selector on launch and make those values adjustable
 

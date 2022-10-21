@@ -11,7 +11,7 @@ import mailer_class
 weather = requests.get(url=f"http://api.weatherapi.com/v1/forecast.json?q={zip}&key={appid}")
 weather.raise_for_status()
 weather_data = weather.json()
-mailer=mailer_class.Mailer()
+mailer= mailer_class.Mailer()
 
 twelve_hour = []
 for each in range(0,12):

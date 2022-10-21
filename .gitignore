@@ -138,9 +138,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-/Day 032 - Automatic Birthday Emailer/Motivational Quote Sender/auth.py
-/Day 032 - Automatic Birthday Emailer/Automatic Birthday Wisher/auth.py
-/Day 033 - ISS Overhead Notifier/ISS Notifier/auth.py
+/032 - 040 - Intermediate+ - Using APIs/Day 032 - Automatic Birthday Emailer/Motivational Quote Sender/auth.py
+/032 - 040 - Intermediate+ - Using APIs/Day 032 - Automatic Birthday Emailer/Automatic Birthday Wisher/auth.py
+/032 - 040 - Intermediate+ - Using APIs/Day 033 - ISS Overhead Notifier/ISS Notifier/auth.py
 **/auth.py
 /000 - Notes/
 /Day 046 - Spotify Musical Time Machine/token.txt
