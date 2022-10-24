@@ -56,7 +56,7 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 047 - Create an Amazon Price Tracker
 * Day 048 - Selenium Web Browser Bot
 * Day 049 - Automating Job Applications on LinkedIn
-* Day 050 - Auto Tinder Swiping Bot
+* ~~Day 050 - Auto Tinder Swiping Bot~~ 
 * Day 051 - Internet Speed Twitter Complaint Bot
 * Day 052 - Instagram Follower Bot
 * Day 053 - Data Entry Job Automation Capstone Project
