@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+</head>
+<body>
+    <!--- These percent curlies are to make loops --->
+    {% for post in posts %}
+    {% if post["id"] == 2 %}
+    <h1>{{ post["title"] }}</h1>
+    <h2>{{ post["subtitle"] }}</h2>
+    {% endif %}
+    {% endfor %}
+
+    <!--
+    IF Elses
+
+    {% if EXPRESSION %}
+        HTML CODE {{VARIABLE}}
+    {% else %}
+        HTML CODE {{ VARIABLE }}
+    {% endif %}
+
+    -->
+</body>
+</html>

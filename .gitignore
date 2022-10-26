@@ -28,7 +28,7 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
+#  Usually these files are written by a python script from a templates
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
@@ -146,3 +146,4 @@ cython_debug/
 /Day 046 - Spotify Musical Time Machine/token.txt
 /Day 051 - Twitter Internet Speed Complainer/selphiebot.py
 /045 - 053 - Intermediate+ - Web Scraping and Automation/Day 046 - Spotify Musical Time Machine/token.txt
+/054 - 057 - Intermediate+ - Intro to Flask/Day 056 - My Personal Site/Practice 2 - Convert Web Template/

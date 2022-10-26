@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blog</title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+  <h2>{{5 * 6}}</h2>
+  <h3>Random Number = {{num}}</h3>
+  <p><a href="{{ url_for('getblog', number = '0') }}">Go to Blog</a></p>
+  <p><a href="{{ url_for('guesser', name = 'josh') }}">Go to Guesser</a></p>
+
+  <footer>
+  <p class="footer_text">Copyright {{year}} Josh Miller.</p>
+  </footer>
+</body>
+</html>
