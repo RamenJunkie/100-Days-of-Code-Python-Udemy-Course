@@ -9,6 +9,13 @@
       font-weight: 900 !important;
   }
 
+  h2 {
+      font-family: 'Montserrat-Bold', sans-serif;
+      font-size: 3rem;
+      line-height: 1.5;
+      font-weight: 900 !important;
+  }
+
   h3 {
       font-family: 'Montserrat-Black', sans-serif;
       font-size: 1.5rem;
@@ -16,7 +23,8 @@
   }
 
   .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
+
   }
 
   #title {
@@ -56,7 +64,23 @@
 
   .title-img {
     width: 60%;
-    transform: rotate(25deg)
+    right: 30%;
+    transform: rotate(25deg);
+    position: absolute;
+  }
+
+  @media (max-width: 1020px) {
+
+  .title-img {
+    transform: rotate(0deg);
+    position: static;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+
   }
 
   /* Featured Items */
@@ -73,9 +97,68 @@
      font-size: 2em;
   }
 
-   .featured-icon:hover {
+  .featured-icon:hover {
      color: #ff4c68;
   }
 
-  #fetures {
-  padding 70% 50%}
+  #features {
+    background: #ffffff;
+    position: relative;
+  }
+
+ /* Testimonial */
+
+ #testimonials {
+    text-align: center;
+    background: #ef8172;
+    color: #ffffff;
+ }
+
+ .test-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+ }
+
+ /* Press */
+
+ #press {
+    padding-bottom: 3%;
+    text-align: center;
+    background: #ef8172;
+    color: #ffffff;
+ }
+
+ .carousel-item {
+     padding: 7% 15%;
+ }
+
+ .press-logo {
+    width: 15%;
+    margin: 20px 20px 20px 15pxv
+ }
+
+/* Pricing */
+
+.pricing-card {
+    text-align: center;
+}
+
+/* Call to Action */
+
+#cta  {
+    padding: 2% 15%;
+    text-align: center;
+    background: #ef8172;
+}
+
+.cta-text {
+    color: #ffffff;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 5% 15% 2%;
+}
