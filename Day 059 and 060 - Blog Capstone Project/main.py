@@ -33,9 +33,9 @@ def get_post(id):
 
 @app.route('/mail', methods=["POST"])
 def mail_to():
-    name = request.form["name"]
-    email = request.form["email"]
-    message = request.form["message"]
+    name = str(request.form.get("name"))
+    email = request.form.get("email")
+    message = request.form.get("message")
 
     email_text = f"Subject: Blog Contact\n\nFrom: {name},\nEmail: {email}\n\n{message}"
     print(email_text)
