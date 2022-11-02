@@ -2,7 +2,7 @@
 
 Code from the Udemy course "[100 Days of Code: the Complete Python Bootcamp](https://www.udemy.com/course/100-days-of-code/)"
 
-Not necesarrily completed in 100 days or actually done daily.
+Not necessarily completed in 100 days or actually done daily.
 
 * Day 001 - Band Name Generator
 * Day 002 - Tip Calculator
@@ -63,7 +63,29 @@ Not necesarrily completed in 100 days or actually done daily.
 * Day 054 - Web Development with Flask
 * Day 055 - Higher Lower Game Returns for Revenge
 * Day 056 - Rendering Static Web Files with Templates
-* Day 057 - Templates, Jinja and Flask
+* Day 057 - Blog Capstone Project Part 1
 * Day 058 - Web foundation Part 5 - Bootstrap  
 --- End of Intermediate+ Section --- 
-* 
+* Day 059 - Blog Capstone Project Part 2
+* Day 060 - Blog Capstone Project Part 2 Continued
+* Day 061 - Advanced Forms with Flask
+* Day 062 - Coffee and WiFi Project
+* Day 063 - Databases and SQL
+* Day 064 - Top Ten Movies Website
+* Day 065 - Web Design Dos and Don'ts
+* Day 066 - Build and API with REST
+* Day 067 - Blog Capstone Project Part 3
+* Day 068 - Authentication wtih Flask
+* Day 069 - Blog Capstone Project Part 4 - Add Users
+* Day 070 - Web Apps and Heroku
+* Day 071 - Pandas Project (Data Analytics)
+* Day 072 - Metaplotlib Project (Data Analytics)
+* Day 073 - More Pandas (Data Analytics)
+* Day 074 - Google Trends Data (Data Analytics)
+* Day 075 - Plotly Charts (Data Analytics)
+* Day 076 - Numpy and Arrays (Data Analytics)
+* Day 077 - Data Visualization with Seaborn  (Data Analytics)
+* Day 078 - Plotly, Metaplotlib, Seaborn Powers Combined!
+* Day 079 - t-tests  (Data Analytics)
+* Day 080 - Predict House Prices Capstone Project (Data Analytics)
+--- End of Advanced Section ---  
