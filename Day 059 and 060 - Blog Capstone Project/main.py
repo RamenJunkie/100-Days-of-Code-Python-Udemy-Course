@@ -31,7 +31,7 @@ def contact():
 def get_post(id):
     return render_template("post.html", post = all_posts[int(id)])
 
-@app.route('/mail', methods=["POST"])
+@app.route('/mail', methods=["POST", "GET"])
 def mail_to():
     name = str(request.form.get("name"))
     email = request.form.get("email")
