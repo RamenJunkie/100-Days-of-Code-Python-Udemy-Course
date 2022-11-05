@@ -1,0 +1,24 @@
+{%- extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Add Book{% endblock %}
+
+{% block content %}
+
+<div class="container">
+<h1>My Library <a class="btn btn-warning btn-sm" href="{{ url_for('add') }}" role="button">Add Book</a></h1>
+
+    {% if books|length != 0 %}
+    <table class="table">
+    {% for book in books %}
+    <tr>
+        <td>{{ book.title }}</td><td>{{ book.author }}</td><td>{{book.rating}}/10</td><td><a class="btn btn-warning btn-sm" href="{{ url_for('edit', book_id = book.id) }}" role="button">Edit</a></td><td><a class="btn btn-warning btn-sm" href="{{ url_for('delete_book', book_id = book.id) }}" role="button">Delete</a></td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+    <h3>Your Library is empty!  Add some Books!</h3>
+    {% endif %}
+    
+</div>
+{% endblock %}
