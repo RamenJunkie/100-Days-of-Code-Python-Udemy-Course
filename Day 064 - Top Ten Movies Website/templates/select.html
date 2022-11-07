@@ -13,9 +13,20 @@
 {% block content %}
 <div class="container">
     <h1 class="heading">Select Movie</h1>
-  <p>
-    <a href="#"> MOVIE TITLE - MOVIE RELEASE DATE</a>
-  </p>
+  <table class="table">
+    {% for movie in movie_results %}
+  <tr>
+    <td><a href="{{ url_for('insert_new', which=loop.index-1 ) }}">{{loop.index}}. {{ movie.title }} - {{ movie.release_date }}</a></td>
+    <td rowspan="2"><img src="https://image.tmdb.org/t/p/w500{{ movie.poster_path }}" height="100"></td>
+  </tr>
+  <tr>
+    <td>{{ movie.overview }}</td>
+  </tr>
+
+
+
+    {% endfor %}
+  </table>
 
 </div>
 {% endblock %}
