@@ -72,10 +72,10 @@ Not necessarily completed in 100 days or actually done daily.
 * Day 062 - Coffee and WiFi Project
 * Day 063 - Databases and SQL
 * Day 064 - Top Ten Movies Website
-* Day 065 - Web Design Dos and Don'ts
+* Day 065 - Web Design Dos and Don'ts (No Project This Day)
 * Day 066 - Build and API with REST
 * Day 067 - Blog Capstone Project Part 3
-* Day 068 - Authentication wtih Flask
+* Day 068 - Authentication with Flask
 * Day 069 - Blog Capstone Project Part 4 - Add Users
 * Day 070 - Web Apps and Heroku
 * Day 071 - Pandas Project (Data Analytics)
