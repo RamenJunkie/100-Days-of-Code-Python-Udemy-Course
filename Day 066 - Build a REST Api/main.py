@@ -11,6 +11,9 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 app.config['JSON_SORT_KEYS'] = False
 
+def make_bool(val: int) -> bool:
+    return bool(int(val))
+
 ##Cafe TABLE Configuration
 class Cafe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -58,6 +61,23 @@ def search_cafe():
     return jsonify(cafes=search_cafes)
 
 ## HTTP POST - Create Record
+@app.route("/add", methods = ["POST"])
+def add_cafe():
+    new_cafe = Cafe()
+    new_cafe.name = request.form['name']
+    new_cafe.map_url = request.form['map_url']
+    new_cafe.img_url = request.form['img_url']
+    new_cafe.location = request.form['location']
+    new_cafe.seats = request.form['seats']
+    new_cafe.has_toilet = make_bool(int(request.form['has_toilet']))
+    new_cafe.has_sockets = make_bool(int(request.form['has_sockets']))
+    new_cafe.has_wifi = make_bool(int(request.form['has_wifi']))
+    new_cafe.can_take_calls = make_bool(int(request.form['can_take_calls']))
+    new_cafe.coffee_price = request.form['coffee_price']
+    db.session.add(new_cafe)
+    db.session.commit()
+    return jsonify(success="Successfully added the new cafe.")
+
 
 
 ## HTTP PUT/PATCH - Update Record
