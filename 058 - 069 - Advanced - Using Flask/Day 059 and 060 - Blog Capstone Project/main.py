@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import requests
 import post
-import mailer_class
 
 #mailer = mailer_class.Mailer()
 

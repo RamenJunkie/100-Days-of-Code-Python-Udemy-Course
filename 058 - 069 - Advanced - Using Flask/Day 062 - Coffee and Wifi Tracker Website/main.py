@@ -44,7 +44,7 @@ def add_cafe():
     if form.validate_on_submit():
         new_cafe = f"\n{form.cafe.data},{form.maps_url.data} ,{form.open_time.data},{form.clos_time.data},{form.clos_time.data},{form.coff_qual.data},{form.powr_qual.data}"
         print(new_cafe)
-        with open('cafe-data.csv',newline='', mode="a", encoding="utf8") as csv_file:
+        with open('cafe-data.csv', newline='', mode="a", encoding="utf8") as csv_file:
             csv_file.write(new_cafe)
 
     return render_template('add.html', form=form)
