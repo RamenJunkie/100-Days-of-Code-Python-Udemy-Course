@@ -11,6 +11,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 app.config['JSON_SORT_KEYS'] = False
 
+
 def make_bool(val: int) -> bool:
     return bool(int(val))
 
@@ -78,11 +79,34 @@ def add_cafe():
     db.session.commit()
     return jsonify(success="Successfully added the new cafe.")
 
-
-
 ## HTTP PUT/PATCH - Update Record
 
+@app.route("/update-price/<cafe_id>", methods = ["POST", "GET"])
+def update_price(cafe_id):
+    new_price = request.args.get("coffee_price")
+    #print(new_price)
+    which_cafe = db.session.query(Cafe).get(cafe_id)
+    if not which_cafe:
+       return jsonify(error="Sorry, cafe does not exist."), 404
+
+    which_cafe.coffee_price = new_price
+    db.session.commit()
+    return jsonify(success=f"Price for {which_cafe.name} Updated to {new_price}.")
+
 ## HTTP DELETE - Delete Record
+@app.route("/delete/<cafe_id>", methods=["POST" ,"GET"])
+def delete_cafe(cafe_id):
+    api_key = "8nc93nsFSDji3hslp20"
+
+    if api_key != request.args.get("api_key"):
+        return jsonify(error="Not authorized."), 403
+    else:
+        which_cafe = db.session.query(Cafe).get(cafe_id)
+        if not which_cafe:
+            return jsonify(error="Sorry, cafe does not exist."), 404
+        db.session.delete(which_cafe)
+        db.session.commit()
+        return jsonify(success=f"{which_cafe.name} deleted.")
 
 
 if __name__ == '__main__':
