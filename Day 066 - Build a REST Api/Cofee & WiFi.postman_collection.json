@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "d8365d3d-0aca-4e1c-be82-2fda9a0eb359",
+		"name": "Cofee & WiFi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4362478"
+	},
+	"item": [
+		{
+			"name": "Get Random Cafe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/random",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"random"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Cafes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cafes in an Area",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?loc=London",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "loc",
+							"value": "London"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cafe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Starbacks",
+							"type": "text"
+						},
+						{
+							"key": "map_url",
+							"value": "https://maps.google.com",
+							"type": "text"
+						},
+						{
+							"key": "img_url",
+							"value": "https://www.google.com",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "London",
+							"type": "text"
+						},
+						{
+							"key": "seats",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "has_toilet",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "has_wifi",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "has_sockets",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "can_take_calls",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "coffee_price",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Price",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/update-price/4?coffee_price=60",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update-price",
+						"4"
+					],
+					"query": [
+						{
+							"key": "coffee_price",
+							"value": "60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cafe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete/8?api_key=8nc93nsFSDji3hslp20",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"8"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "8nc93nsFSDji3hslp20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

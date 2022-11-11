@@ -212,3 +212,7 @@
  .release_date {
 	 font-weight: normal;
 }
+
+#cke_1_contents {
+    height: 700px;
+}
