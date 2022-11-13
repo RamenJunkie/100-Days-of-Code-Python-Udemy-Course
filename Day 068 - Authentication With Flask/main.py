@@ -21,8 +21,25 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
     name = db.Column(db.String(1000))
+
+    def is_active(self):
+        return True
+
+    def is_authenticated(self):
+        return True
+
+    def is_anonymous(self):
+        return False
+
+    def get_id(self):
+        return self.id
+
 #Line below only required once, when creating DB. 
 # db.create_all()
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 
 @app.route('/')
@@ -33,13 +50,18 @@ def home():
 @app.route('/register', methods=(["POST", "GET"]))
 def register():
     if request.form.get("name"):
-        new_user = User()
-        new_user.name = str(request.form.get("name"))
-        new_user.email = request.form.get("email")
-        new_user.password = werkzeug.security.generate_password_hash(request.form.get("password"), method='pbkdf2:sha256', salt_length=8)
-        db.session.add(new_user)
-        db.session.commit()
-        return redirect('/secrets')
+        check_user = User.query.filter_by(email = request.form.get("email")).first()
+        if check_user:
+            flash(u'Account already exists.', 'error')
+            return render_template("login.html")
+        else:
+            new_user = User()
+            new_user.name = str(request.form.get("name"))
+            new_user.email = request.form.get("email")
+            new_user.password = werkzeug.security.generate_password_hash(request.form.get("password"), method='pbkdf2:sha256', salt_length=8)
+            db.session.add(new_user)
+            db.session.commit()
+            return redirect(url_for('secrets', name=new_user.name))
 
     return render_template("register.html")
 
@@ -47,28 +69,34 @@ def register():
 @app.route('/login', methods=(["POST", "GET"]))
 def login():
     if request.form.get("email"):
-        check_user = User.query.filter_by(email = request.form.get("email")).all()
+        check_user = User.query.filter_by(email = request.form.get("email")).first()
         if not check_user:
+            flash(u'Account Not Found.', 'error')
             return render_template("login.html")
 
-        if werkzeug.security.check_password_hash(check_user[0].password, request.form.get("password")):
-            print("Success!")
+        if werkzeug.security.check_password_hash(check_user.password, request.form.get("password")):
+            login_user(check_user)
+            return redirect(url_for('secrets', name=check_user.name))
         else:
-            print("Fail!")
+            flash(u'Incorrect Password.', 'error')
     return render_template("login.html")
 
 
-@app.route('/secrets')
-def secrets():
-    return render_template("secrets.html")
+@app.route('/secrets/<name>')
+@login_required
+def secrets(name):
+    return render_template("secrets.html", name=name)
 
 
 @app.route('/logout')
+@login_required
 def logout():
-    pass
+    logout_user()
+    return redirect("/")
 
 
 @app.route('/download')
+@login_required
 def download():
     return send_from_directory(directory=app.static_folder, path='files/cheat_sheet.pdf')
 
