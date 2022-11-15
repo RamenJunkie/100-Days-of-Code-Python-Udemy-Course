@@ -1,8 +1,10 @@
 from functools import wraps
+
+import bleach
 import werkzeug
 from flask import Flask, render_template, redirect, url_for, flash, request, abort
 from flask_bootstrap import Bootstrap
-from flask_ckeditor import CKEditor
+from flask_ckeditor import CKEditor, CKEditorField
 from datetime import date
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_sqlalchemy import SQLAlchemy
@@ -14,7 +16,6 @@ from forms import CreatePostForm
 from flask_gravatar import Gravatar
 from flask_wtf import FlaskForm
 
-
 def validate_pass(form, field):
     if len(field.data) < 8:
         raise ValidationError(u'Password must be 8 characters or longer.')
@@ -23,6 +24,23 @@ def validate_email(form, field):
     if "@" not in field.data or field.data[-4] != ".":
         raise ValidationError(u'Invalid Email Address.')
 
+## strips invalid tags/attributes by hank-ux
+def strip_invalid_html(content):
+    allowed_tags = ['a', 'abbr', 'acronym', 'address', 'b', 'br', 'div', 'dl', 'dt',
+                    'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'i', 'img',
+                    'li', 'ol', 'p', 'pre', 'q', 's', 'small', 'strike',
+                    'span', 'sub', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th',
+                    'thead', 'tr', 'tt', 'u', 'ul']
+    allowed_attrs = {
+        'a': ['href', 'target', 'title'],
+        'img': ['src', 'alt', 'width', 'height'],
+    }
+    cleaned = bleach.clean(content,
+                           tags=allowed_tags,
+                           attributes=allowed_attrs,
+                           strip=True)
+
+    return cleaned
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBAjhuigjk6O6donzW99877BXox7C0sKR6b'
@@ -36,6 +54,15 @@ db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
+gravatar = Gravatar(app,
+                    size=250,
+                    rating='r',
+                    default='retro',
+                    force_default=False,
+                    force_lower=False,
+                    use_ssl=False,
+                    base_url=None)
+
 ##CONFIGURE TABLES
 
 class User(UserMixin, db.Model):
@@ -44,6 +71,8 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(100), unique=True)
     password = db.Column(db.String(100))
     name = db.Column(db.String(1000))
+    posts = relationship("BlogPost", back_populates="author")
+    comments = relationship("Comment", back_populates="author")
 
     def is_active(self):
         return True
@@ -60,13 +89,23 @@ class User(UserMixin, db.Model):
 class BlogPost(db.Model):
     __tablename__ = "blog_posts"
     id = db.Column(db.Integer, primary_key=True)
-    author = db.Column(db.Integer, db.ForeignKey("blog_users.id"))
+    author_id = db.Column(db.Integer, db.ForeignKey("blog_users.id"))
+    author = relationship("User", back_populates="posts")
     title = db.Column(db.String(250), unique=True, nullable=False)
     subtitle = db.Column(db.String(250), nullable=False)
     date = db.Column(db.String(250), nullable=False)
     body = db.Column(db.Text, nullable=False)
     img_url = db.Column(db.String(250), nullable=False)
+    comments = relationship("Comment", back_populates="posts")
 
+class Comment(db.Model):
+    __tablename__ = "comments"
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text, nullable=False)
+    author_id = db.Column(db.Integer, db.ForeignKey("blog_users.id"))
+    author = relationship("User", back_populates="comments")
+    post_id = db.Column(db.Integer, db.ForeignKey("blog_posts.id"))
+    posts = relationship("BlogPost", back_populates="comments")
 
 class RegisterForm(FlaskForm):
     name = StringField('Name', validators=[DataRequired()])
@@ -78,6 +117,11 @@ class LoginForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(), validate_email])
     password = PasswordField('Password', validators=[DataRequired(), validate_pass])
     submit = SubmitField('Login')
+
+class CommentForm(FlaskForm):
+    body = CKEditorField("Comment", validators=[DataRequired()])
+    submit = SubmitField('Submit Comment')
+
 
 
 @login_manager.user_loader
@@ -96,7 +140,7 @@ def admin_only(f):
 
 @app.route('/')
 def get_all_posts():
-    #db.create_all()
+    db.create_all()
     if current_user.is_authenticated:
         cur_id = current_user.id
     else:
@@ -160,14 +204,30 @@ def logout():
     return redirect(url_for('get_all_posts'))
 
 
-@app.route("/post/<int:post_id>")
+@app.route("/post/<int:post_id>", methods=(["POST", "GET"]))
 def show_post(post_id):
     if current_user.is_authenticated:
         cur_id = current_user.id
     else:
         cur_id = -1
     requested_post = BlogPost.query.get(post_id)
-    return render_template("post.html", post=requested_post, uuid=cur_id)
+
+    form = CommentForm()
+    if form.validate_on_submit():
+        new_comment = Comment(
+            body=strip_invalid_html(form.body.data),
+            author=current_user,
+            posts = requested_post
+        )
+        db.session.add(new_comment)
+        db.session.commit()
+        return redirect(url_for('show_post', post_id=post_id))
+
+    print(requested_post.comments)
+    return render_template("post.html", post=requested_post, uuid=cur_id, form=form)
+
+
+
 
 
 @app.route("/about")
@@ -189,7 +249,7 @@ def add_new_post():
             subtitle=form.subtitle.data,
             body=form.body.data,
             img_url=form.img_url.data,
-            author=current_user.id,
+            author=current_user,
             date=date.today().strftime("%B %d, %Y")
         )
         db.session.add(new_post)
