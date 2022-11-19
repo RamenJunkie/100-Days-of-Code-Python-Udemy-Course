@@ -89,3 +89,23 @@ Not necessarily completed in 100 days or actually done daily.
 * Day 079 - t-tests  (Data Analytics)
 * Day 080 - Predict House Prices Capstone Project (Data Analytics)
 --- End of Advanced Section ---  
+* Day 081 - Professional Portfolio Project - Morse Code Translator
+* Day 082 - Professional Portfolio Project - Portfolio Website
+* Day 083 - Professional Portfolio Project - Tic Tac Toe
+* Day 084 - Professional Portfolio Project - Image Watermarking Desktop App
+* Day 085 - Professional Portfolio Project - Typing Speed Test
+* Day 086 - Professional Portfolio Project - Breakout
+* Day 087 - Professional Portfolio Project - Cafe and WiFi Website
+* Day 088 - Professional Portfolio Project - ToDo List
+* Day 089 - Professional Portfolio Project - Disappearing Text App
+* Day 090 - Professional Portfolio Project - Convert PDF to Audiobook
+* Day 091 - Professional Portfolio Project - Image Color Pallet Generator
+* Day 092 - Professional Portfolio Project - Custom Web Scraper
+* Day 093 - Professional Portfolio Project - Automate the Google Dinosaur Game
+* Day 094 - Professional Portfolio Project - Space Invaders
+* Day 095 - Professional Portfolio Project - A Custom API Based Website
+* Day 096 - Professional Portfolio Project - An Online Shop
+* Day 097 - Professional Portfolio Project - Custom Automation
+* Day 098 - Professional Portfolio Project - Analyse and Visualise the Space Race
+* Day 099 - Professional Portfolio Project - Analyse Deaths Involving The Police in the US
+* Day 100 - Professional Portfolio Project - Predict Earnings with Multivariable Regression
