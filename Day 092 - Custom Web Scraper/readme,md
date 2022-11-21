@@ -1,0 +1,35 @@
+# Custom Webscraper
+
+This project will likely be fleshed out in it's own repository.
+
+Currently, it will scrape the Moment House website and aggregate all of the live shows into a Calendar List.
+
+For the more complete version, i want to aggregate several other concert streaming sites together into one calendar.
+
+
+## Sample Output
+
+2022-11-14 - Markiplier - Moment House
+2022-11-13 - Mark Tuan - Moment House
+2022-12-13 - The Always Sunny Podcast - Moment House
+2022-12-12 - Murder With My Husband - Moment House
+2022-12-09 - Behind the Bastards - Moment House
+2022-12-05 - Two Hot Takes - Moment House
+2022-12-09 - Brian Posehn - Moment House
+2022-12/9 - Will You Accept This Rose? - Moment House
+2022-12-14 - Something Was Wrong - Moment House
+2022-11-18 - Billy Wayne Davis - Moment House
+2022-12-18 - The McElroy Family - Moment House
+2022-12-02 - Alaska Thunderfuck - Moment House
+2022-12/8 - Jenny Owen Youngs - Moment House
+2022-11-15 - Gareth Reynolds - Moment House
+2022-11-18 - Trash Tuesday - Moment House
+2022-11-21 - The Judgies - Moment House
+2022-12-09 - Gilbert Gottfried's Amazing Colossal Podcast - Moment House
+2022-12/6 - Celebrity Memoir Book Club - Moment House
+2022-12-06 - Ryan Kelly - Moment House
+2022-12/4 - Message 24 - Moment House
+2022-12-3  - Too Scary; Didn't Watch - Moment House
+2022-11-17 - Peter Santenello - Moment House
+2022-12-02 - Total Ship Show - Moment House
+2022-12-11 - Thruhikers - Moment House
