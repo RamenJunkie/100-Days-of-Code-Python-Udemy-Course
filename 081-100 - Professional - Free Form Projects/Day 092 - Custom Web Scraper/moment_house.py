@@ -34,7 +34,8 @@ def get_moment_house():
     for each in event_json['props']['pageProps']['premiereEvents']:
         if "from" not in each['featureInfo']['eventDate']:
             date = fix_date(each['featureInfo']['eventDate'])
-            moment_events.append(event_class.Event(date, each['displayName'], each['featureInfo']['eventTitle'], "Moment House"))
+            moment_events.append(
+                event_class.Event(date, each['displayName'], each['featureInfo']['eventTitle'], "Moment House"))
 
     return moment_events
 
